@@ -170,4 +170,9 @@ def do_inference(cfg,
         logger.info("CMC curve, Rank-{:<3}:{:.1%}".format(r, cmc[r - 1]))
     return cmc[0], cmc[4]
 
+def extract_features(model, inputs):
+    # For inference, simply call the model with the input.
+    # Adjust this function if your model requires extra parameters (e.g., cam_label, view_label)
+    return model(inputs)
+
 
