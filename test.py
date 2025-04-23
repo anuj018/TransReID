@@ -4,7 +4,7 @@ import argparse
 from datasets import make_dataloader
 from model import make_model
 from processor import do_inference
-from utils.logger import setup_logger
+from TransReID.utils.logger import setup_logger
 
 
 if __name__ == "__main__":
